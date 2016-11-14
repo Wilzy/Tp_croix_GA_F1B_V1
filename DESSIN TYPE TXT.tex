@@ -1,0 +1,32 @@
+algo Dessin_x
+
+//BUT  dessiner un x 
+//ENTREE    un caractére et une taille
+//SORTIE  le dessin d'un x 
+
+VAR 
+	i,j,taille : ENTIER
+	charc : Caractere
+	
+DEBUT
+	ECRIRE "Saisir un caractere"
+	LIRE charc
+	ECRIRE "Saisir une taille"
+	LIRE taille
+	
+	POUR i DE 1 A taille FAIRE
+	
+	DEBUT
+			POUR j DE 1 A taille FAIRE
+		DEBUT
+		SI j=i ou j=taille-(i-1) alors
+		ECRIRE charc
+		SINON 
+		ECRIRE ' '
+		FIN
+	ECRIRE
+	FIN
+	
+	
+FIN
+	
